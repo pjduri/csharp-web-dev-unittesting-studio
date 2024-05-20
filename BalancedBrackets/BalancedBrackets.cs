@@ -1,5 +1,4 @@
-﻿using System;
-namespace BalancedBrackets
+﻿namespace BalancedBrackets
 {
 	public class BalancedBrackets
 	{
@@ -23,7 +22,7 @@ namespace BalancedBrackets
          * returns true if balanced, false otherwise
         */
 
-        public static bool HasBalancedBrackets(String str)
+        public static bool HasBalancedBrackets(string str)
         {
             int brackets = 0;
             foreach (char ch in str.ToCharArray())
@@ -36,6 +35,10 @@ namespace BalancedBrackets
                 {
                     brackets--;
                 }
+                // if (brackets < 0) 
+                // {
+                //     return false;
+                // }
             }
             return brackets == 0;
         }
